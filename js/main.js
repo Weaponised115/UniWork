@@ -7,7 +7,7 @@ function contactRedirect() {
 }
 
 function portfolioRedirect() {
-    window.location.href = 'aboutme.html';
+    window.location.href = 'aboutMe.html';
 }
 
 function aboutMeRedirect() {
