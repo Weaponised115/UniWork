@@ -1,0 +1,451 @@
+/* Genral HTML Standards*/
+
+body {
+  position: relative;
+  background: linear-gradient(to bottom right, #feffdf, #97cba9, #668ba4 );
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  font-family: 'Libre Baskerville', serif;
+  transition:0.3s ease-in-out;
+  margin:auto;
+  overflow: auto;
+}
+
+blockquote{
+  position: fixed;
+  text-align: center;
+  color:#353839;
+  width: 45vh;
+  font-size: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+em{
+  position: relative;
+  display: flex;
+  text-align: center;
+  color:#353839;
+  width: 100%;
+  font-size: 1.8vh;
+  margin: auto;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  color:#353839;
+  font-size: 2vh;
+}
+
+h1, h2, h3, p, li, a {
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: #668ba4;
+    font-family: 'Libre Baskerville', serif;
+}
+
+label{
+  position: relative;
+  left: 1.5vh;
+}
+
+blockquote{
+  position: relative;
+  display: flex;
+  text-align: center;
+  color:#353839;
+  width: 45vh;
+  font-size: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #353839;
+}
+
+/* Used In Many*/
+
+.navbar{
+  position: fixed;
+  margin: 0;
+  border-radius:1vh;
+  top: 0;
+  z-index: 98;
+}
+
+.navbar ul{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5vh;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li{
+  text-align: center;
+  float: left;
+  margin: 2.5vh;
+  margin-right: 3vh;
+  padding: 0 2vh;
+  cursor: pointer;
+}
+
+.material-icons.md-60 { 
+  position: fixed;
+  display: flex;
+  font-size: 3vh;
+  margin: 0;
+  padding: 0;
+}
+
+#page_header{
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #668ba4;
+  font-size: 10vh;
+}
+
+.invis_btn{
+  position: relative;
+  display: flex;
+  background: transparent;
+  cursor: pointer;
+  border: transparent;
+  margin:0; 
+  z-index: 1;
+}
+
+.bullet_points li{
+  position: relative;
+  display: flex;
+  display: list-item;
+  text-align: left;
+  color: #353839;
+  font-size: 1.5vh;
+}
+
+.current{
+  display: flex;
+  color: #353839;
+  border: 0.3vh solid #353839;
+  border-radius:1vh;
+  padding: 1vh;
+}
+
+.back{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  z-index: 99;
+}
+
+/* Used In index.html */
+
+#main_header {
+  position: relative;
+  display: flex;
+  color: #668ba4;
+  padding: 1vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 6vh;
+}
+
+.go_btn{
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+  margin: 10vw;
+  margin-top: -20vw;
+  font-size: 2vh;
+  font-weight: 600;
+  border: transparent;
+  background: transparent;
+  color: #353839;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#btn_container {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  margin-top: 50vh; 
+  gap: 20vh;
+}
+
+/*Used in aboutMe.html*/
+
+#about_main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.5vh;
+}
+
+.about{
+  position: relative;
+  display:inline-block;
+  justify-content: flex-end;
+  color: #353839;
+}
+
+/*Used in contact.html*/
+
+#enquire-form{
+  position: relative;
+  justify-content: center;
+  text-align: left;
+  color: #668ba4;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quick_contact{
+  display: flex;
+  margin: 2vh;
+  font-size: 1.4vh;
+  position: relative;
+  top: 0;
+}
+
+.quotes {
+  position: relative;
+  display: flex;
+  font-size: 5vh;
+  z-index: 1;
+}
+
+/* This is for the contact me GitHub and LinkedIn positioning*/
+#gitLinked{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  bottom: 55vh;
+}
+
+.link_img{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  color:#353839;
+  text-align: center;
+}
+
+.link_text{
+  position: relative;
+  display: flex;
+  color:#353839;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+.link_text:hover{
+  position: relative;
+  display: flex;
+  text-decoration: underline;
+}
+
+input[type=checkbox] {
+  position: relative;
+  transform: scale(1.5);
+  margin: 2vh;
+  font-size: 1.2vh;
+}
+
+input[type=email] {
+  position: relative;
+  transform: scale(1.5);
+  margin: 2vh;
+  margin-left: 7vh;
+  font-size: 1.2vh;
+}
+
+input[type=text] {
+  position: relative;
+  transform: scale(1.5);
+  margin: 2vh;
+  margin-left: 7vh;
+  font-size: 1.2vh;
+}
+
+input[type=phonenumber] {
+  position: relative;
+  transform: scale(1.5);
+  margin-left: 7vh;
+  font-size: 1.2vh;
+}
+
+input[type=date] {
+  position: relative;
+  transform: scale(1.5);
+  margin-left: 3vh;
+  font-size: 1.2vh;
+}
+
+input[type=submit] {
+  position: relative;
+  transform: scale(1.5);
+  margin: 2vh;
+  font-size: 1.2vh;
+}
+
+/*Used in hobbies.html*/
+
+.hobbies_section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  right: 11.5vh;
+}
+
+.hobbies_section_text {
+  position: relative;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  color: #353839;
+  font-size: 1.5vh;
+}
+
+.hobbies_section img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right:10vh;
+  margin-left: 10vh;
+}
+
+/*Used in languages.html*/
+
+.langauges{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-right: 5vh;
+}
+
+.langauges div{
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  margin: auto 3vh;
+  padding-top: 2vh;
+  padding-bottom: 10vh;
+  font-size:1.5vh;
+  top: 5vh;
+}
+
+.langauges img{
+  display: flex;
+  position: relative;
+  margin-top: 1.5vh;
+}
+
+.line_logo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+/*Used in projects*/
+#project_height{
+  height: 250vh;
+}
+
+#project_nav{
+  position: relative;
+  display: flex;
+  bottom: 5vh;
+  font-size: 1.5vh;
+}
+
+#project_nav li{
+  position: relative;
+  display: flex;
+  margin-right: 2vh;
+}
+
+.box{
+  border: 0.5vh solid;
+}
+
+.description{
+  position: relative;
+  color: #353839;
+  font-size: 1.5vh;
+  text-align: start;
+}
+
+/* end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
