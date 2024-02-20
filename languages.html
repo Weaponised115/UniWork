@@ -1,3 +1,4 @@
+<!-- View index.html to see what the code inside the head section does -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +7,34 @@
     <title>CV Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- These are custom fonts and icons imported from google and font-awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body style="height: 135vh;">
     <script src="js/main.js" ></script>
-    
-    <header id="page_header">Langauges</header>
 
+    <!-- This is an important part of each 'View Me' section -->
+    <!-- 'nav' tag is used specifically for navigation -->
+    <nav class="navbar">
+        <!-- 'ul' tag is used to basically put lists inside of -->
+        <!-- 'li' creates a bullet pointed lists, however I have removed the bullet points for a cleaner look -->
+        <ul id="options">
+            <!-- 'current' is the page currently being viewed, exlpained more in 'styles.css' -->
+            <li><a  onclick=aboutMeRedirect()>About Me </a></li>
+            <li><a  class="current" onclick=languagesRedirect()>Langauges</a></li>
+            <li><a  onclick=hobbiesRedirect()>Hobbies</a></li>
+            <li><a  onclick=projectsRedirect()>Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header is used to make a header -->
+    <header id="page_header" style="top: 10vh;">Langauges</header>
+
+    <!-- A back button to get back to the home screen (index.html) -->
+    <!-- Uses a function implemented in javascript -->
     <div class="back">
         <button class="invis_btn" onclick=homeRedirect() style="color: #1a1831;">
             <span class="material-icons md-60" >
@@ -24,77 +43,116 @@
         </button>
     </div>
 
-    <nav class="navbar">
-        <ul id="options">
-            <li><a  onclick=aboutMeRedirect()>About Me </a></li>
-            <li><a  class="current" onclick=languagesRedirect()>Langauges</a></li>
-            <li><a  onclick=hobbiesRedirect()>Hobbies</a></li>
-            <li><a  onclick=projectsRedirect()>Projects</a></li>
-        </ul>
-    </nav>
+   
+    <!-- 'main' just defines the main section of the page -->
+    <main>
+        <section class="langauges">
 
-<main>
-    I CAN NOT SEEM TO LINES THESE BLOODY LOGOS UP!!!!!!!
-     <section class="langauges">
-        <!--&#9734; = empty star,  &#9733; = full star-->
+            <div class="line_logo" style="top: 7vh;">
+                <div style="top: 6vh;">
+                    <p class="review">
+                        HTML is a fun langauge with many tedious features,
+                        when combined with CSS, can make website easily.
+                        I do struggle with alignment however...
+                    </p>
 
-        <div class="line_logo">
-            <div>
-                &#9733&#9733&#9733&#9733&#9734
-                <img src="imgs/html.png" style="width: 7vh; right: 0.1vh;">
-                HTML
-            </div>
-    
-             <div>
-                &#9733&#9733&#9734&#9734&#9734
-                <img src="imgs/VisualBasic.png" style="width: 10vh;">
-                Visial Basic
-            </div>
-        </div>
+                    <div>
+                        <!-- &#9734; = empty star,  &#9733; = full star -->
+                        &#9733 &#9733 &#9733 &#9733 &#9734
+                        <!-- 'img' allows us to import an image, src means source - either file path or web link  -->
+                        <img src="imgs/html.png" style="width: 7vh; left: 12.3vh;">
+                        HTML
+                    </div>
+                </div>
 
-        <div class="line_logo">
-            <div>
-                &#9733&#9733&#9733&#9733&#9734
-                <img src="imgs/css.png" style="width: 8vh;left: 0.1vh;">
-                CSS 
+                <div style="top: 12vh;">
+                    <p class="review">
+                        Viual Basic is a pretty normal language, but the IDE we used in secondary school
+                            made me resent the whole language.
+                    </p>
+            
+                    <div>
+                        &#9733 &#9733 &#9734 &#9734 &#9734
+                        <img src="imgs/VisualBasic.png" style="width: 10vh; left: 12.3vh;">
+                        Visial Basic
+                    </div>
+                </div>
             </div>
-    
-            <div>
-                &#9733&#9733&#9733&#9733&#9734
-                <img src="imgs/Python.png" style="width: 5vh;">
-                Python
-            </div>
-        </div>
+            
 
-        <div class="line_logo">
-            <div style="bottom: 1.7vh; margin-bottom: 3.8vh;">
-                &#9733&#9733&#9733&#9734&#9734
-                <img src="imgs/JavaScript.png" style="width: 5vh;">
-               JavaScript
-            </div>
-    
-            <div style=" position: relative;">
-                &#9733&#9733&#9733&#9734&#9734
-                <img src="imgs/cSharp.png" style="width: 5vh;">
-                C#
-            </div>
-        </div>
+            <div class="line_logo" style="top: 9vh;">
+                <div>
+                    <p class="review">
+                        Some argue that CSS is not a real language, but I see it as,
+                        html is your fundimental vocabulary, and CSS is the slang and formalilties 
+                        that make your dialect more unqiue and defined. 
+                    </p>
+                    <div>
+                        &#9733 &#9733 &#9733 &#9733 &#9734
+                        <img src="imgs/css.png" style="width: 8vh; left: 12.4vh;">
+                        CSS 
+                    </div>
+                </div>
 
-        <div class="line_logo">
-            <div style="margin-bottom: 1vh;">
-                &#9733&#9733&#9733&#9733&#9734
-                <img src="imgs/java.png" style="width: 9vh; right: .5vh;">
-                Java
+                <div style="top: 11.5vh;">
+                    <p class="review">
+                        Python is an easy language, it is more of a genral use language, but anything specific, will require a more
+                        require a topic optimised language. 
+                    </p>
+                    <div>
+                        &#9733 &#9733 &#9733 &#9733 &#9734
+                        <img src="imgs/Python.png" style="width: 5vh; left: 12.3vh;">
+                        Python
+                    </div>
+                </div>
             </div>
-    
-            <div style="margin-top: 2.3vh;">
-                &#9733&#9733&#9734&#9734&#9734
-                <img src="imgs/SQL.png" style="width: 10vh;">
-                SQL
+
+            <div class="line_logo" style="top: 9vh;">
+                <section></section>
+                    <p class="review" style="top: 6vh;">
+                        JavaScript is the most used langauge, and with TypeScript it's great,
+                        but on it's own t can be extremly annoying.
+                    </p>
+                    <div style="top: 10.54vh;">
+                        &#9733 &#9733 &#9733 &#9734 &#9734 
+                        <img src="imgs/JavaScript.png" style="position: relative;  width: 4.7vh; margin-top: 3vh; margin-bottom: 1vh; bottom: 1vh; left: 12.3vh;">
+                        JavaScript
+                    </div>
+
+                <p class="review" style="bottom: 1.5vh;">
+                    C# is widley used with programs like .net and SQl, I know little about C#, so will give it a 3!
+                </p>
+                <div>
+                    &#9733 &#9733 &#9733 &#9734 &#9734
+                    <img src="imgs/cSharp.png" style="width: 5vh; left: 12.3vh;">
+                    C#
+                </div>
             </div>
-        </div>
-     </section>
-</main>
+
+            <div class="line_logo" style="top: 12vh;">
+                <p class="review" style="bottom: 6.8vh;">
+                    Beautiful language, I understand it the most out of any language,
+                    it is very good for web and andrioid apps, as well as more specific things.
+                </p>
+                <div style="margin-bottom: 6vh;">
+                    &#9733 &#9733 &#9733 &#9733 &#9734
+                    <img src="imgs/java.png" style="width: 7vh; right: .5vh; left: 12.3vh;">
+                    Java
+                </div>
+
+                <p class="review" style="bottom: 1.5vh;">
+                    SQL seems great, but I have yet to learn much of it! 
+                    So for me it's a 2 as of now, but I'm sure it will go up
+                </p>
+                <div style="margin-top: 5vh;">
+                    &#9733 &#9733 &#9734 &#9734 &#9734
+                    <img src="imgs/SQL.png" style="width: 10vh; left: 12.3vh;">
+                    SQL
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 
 </body>

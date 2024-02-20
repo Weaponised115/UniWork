@@ -6,17 +6,38 @@
     <title>CV Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- These are custom fonts and icons imported from google and font-awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <!--Use Project Heihgt if page is scrollable-->
 <body id="project_height">
     <script src="js/main.js" ></script>
 
+    <!-- 'ul' tag is used to basically put lists inside of -->
+    <!-- 'li' creates a bullet pointed lists, however I have removed the bullet points for a cleaner look -->
+    <!-- 'a' is an anchor tag, which allows for hyperlinks (urls, html files, email addresses...), in this case,
+    I am redirecting the 'li' to it's corresponding project section  -->
+    <ul id="project_nav">
+        <li><a href="#isobel" style="text-decoration: none;">Project 1 </a> </li>
+        <li><a href="#mario" style="text-decoration: none;">Project 2</a> </li>
+        <li><a href="#mario" style="text-decoration: none;">Project 3 </a> </li>
+    </ul>
+
+      <!-- Header is used to make a header -->
+      <header id="page_header">My Projects</header>
+
+    
+
+    <!-- This is an important part of each 'View Me' section -->
+    <!-- 'nav' tag is used specifically for navigation -->
     <nav class="navbar">
+        <!-- 'li' creates a bullet pointed lists, however I have removed the bullet points for a cleaner look -->
         <ul id="options">
+            <!-- 'current' is the page currently being viewed, exlpained more in 'styles.css' -->
             <li><a  onclick=aboutMeRedirect()>About Me </a></li>
             <li><a  onclick=languagesRedirect()>Langauges</a></li>
             <li><a  onclick=hobbiesRedirect()>Hobbies</a></li>
@@ -24,7 +45,8 @@
         </ul>
     </nav>
 
-
+    <!-- A back button to get back to the home screen (index.html) -->
+    <!-- Uses a function implemented in javascript -->
     <div class="back">
         <button class="invis_btn" onclick=homeRedirect() style="color: #1a1831;">
             <span class="material-icons md-60" >
@@ -33,30 +55,21 @@
         </button>
     </div>
 
-    
-
-        <ul id="project_nav">
-            <li><a href="#isobel" style="text-decoration: none;">Project 1 </a> </li>
-            <li><a href="#mario" style="text-decoration: none;">Project 2</a> </li>
-            <li><a href="#mario" style="text-decoration: none;">Project 3 </a> </li>
-        </ul>
-
-            <header id="page_header">My Projects</header>
-    
     <div id="isobel" >
-                    <!--F Pattern-->
+        <!--F Pattern-->
         <h2 style="font-size: 2.2vh;">project 1.</h2>
 
         <div class="img_size">
+        <!-- 'img' allows us to import an image, src means source - either file path or web link  -->
         <img class="box" src="imgs/isobel.png" style="width:auto; height:50vh;">
         </div>
 
+        <!-- 'p' is a paragraph-->
         <p class="description" >
             Above is a screenshot of a website that I created for a friend as a present,<br>
             I used a combination of HTML, CSS, and JavaScript to create and display this website.<br>
             I also had to learn about domains and DNS servers, in order to publish this code to a public website.
         </p>
-
     </div>
 
     <div id="mario">
@@ -73,6 +86,7 @@
 
     <div class="dvd">
         <!--F Pattern-->
+        <!-- h2 is a heading, the seconed level of the headings -->
         <h2 style="font-size: 2.2vh;" >project 3.</h2>
 
         <img class="box" src="imgs/thisSite.png" style="width:auto; height:50vh;">
@@ -83,6 +97,7 @@
         </p>
     </div>
 
+    <!-- 'footer' is used at the bottom of the page -->
     <footer style="top: 10vh;">
         <a href="#project_height" style="color: #353839;">Return To Top </a> </li>
     </footer>

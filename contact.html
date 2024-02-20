@@ -1,3 +1,4 @@
+<!-- View index.html to see what the code inside the head section does -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,30 @@
     <title>CV Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- These are custom fonts and icons imported from google and font-awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<!-- Sets a page height, used in this case for scrolling -->
 <body style="height: 120vh;">
     <script src="js/main.js" ></script>
 
-
+    <!-- Header is used to make a header, here I use 'top' to make the header 4vh away from the top of the page -->
     <header id="page_header" style="top: 4vh;">Contact Me</header>
+    
+    <!-- 'h2' is a subheader, just a smaller one! h3 is even smaller and so on -->
     <h2 style="top: 2vh; font-size: 3vh;"> Enquire for a project from me  </h2>
-<!--When you Zoom in, certain types get big and you cant click them :(-->
     <div id="quick_contact">
-        Samuel Devinett
+        Samuel Devinett &nbsp SUN: 230411191
+        <!-- Fa is awesome fonts' wat of referenceing an icon -->
         <i class="fa fa-envelope" style="margin-top: 0.1vw;  margin-left: 3vh; "></i>
-        &nbsp&nbsp <!--I put this here, and not inside the tag text, because I don't want the envelope underlined-->
-        <!--Mailto, works!-->
+        <!--I put this here, and not inside the tag text, because I don't want the envelope underlined-->
+        &nbsp&nbsp 
+        <!--Mailto, works! Is used to 'mail to' an email, with a pre written body-->
+        <!-- Color changes the color of the text -->
         <a href="mailto:230411191@aston.ac.uk?subject=Hello&body=Samuel Devinett,
          You are the best student we have ever had" style="color: #353839;   margin-right: 3vh;">Send Email</a>
         <i class="fa fa-phone" style="margin-top: 0.2vw;"></i>
@@ -31,49 +38,55 @@
         <u>+447577056533</u>
     </div>
 
+    <!-- A back button to get back to the home screen (index.html) -->
+    <!-- Uses a function implemented in javascript -->
     <div class="back">
         <button class="invis_btn" onclick=homeRedirect() style="color: #1a1831;">
             <span class="material-icons md-60" >
+                <!-- This is how google defines it's icons -->
                 arrow_back_ios 
             </span>
         </button>
     </div>
+
+
     <section id="enquier">
         <form id="enquire-form">
             <!--F Pattern-->
-            <input type ="text" name="name" placeholder="First Name" required/>
+             <!-- 'position: relative;' allows for use of the top, right, bottom, and left properties,
+             which allows us to move element relative to their position  -->
+        <div style=" position: relative ;right: 1vh;">
+            <!-- tag of input, means it relates to a form of input -->
+            <!-- name gives the input a name -->
+            <!-- place holder changes the text that is displayed inside the input 'box' -->
+            <!-- required means you MUST input -->
+            <!-- the 'type' will effect what sort of characteristics  -->
+            <input type ="text" name="name" placeholder="First Name " required/>
 			<input type="email"  id="first_email" placeholder="Email" required onchange="checkEmail()"/>
 			<input type="email"	 id="confirm_email" placeholder="Confirm Email" required onchange="checkEmail()"/>
             <input type="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required/><br></br> 
-            
+        </div>
+
             <label style="position: relative; left: 3vh;">Date wanted:</label>
 			<input type="date" id="specified_Date" name="specifiedDate" onchange="checkDate()" style="bottom: 0.4vh; left: 3.5vh;" required>
 			</br></br>  
             <label> <input type = "checkbox" id="phoneCalls" name="cbx"value="sms" style="bottom: 0.3vh;"/>Phone Calls</label></br>
 			<label> <input type = "checkbox" id="texts" name="cbx"value="sms" style="bottom: 0.3vh;" />Text</label></br>
-			<label><input type="checkbox" id="email" name="cbx"value= "emails" style="bottom: 0.3vh;"/>Email</label></br></br> 
+			<label><input type="checkbox" id="email" name="cbx "value= "emails" style="bottom: 0.3vh;"/>Email</label></br></br>
+            <input type="text" id="text" name="text" maxlength="200"
+            placeholder="A short paragraph explaining the desired project (max 500 characters)" 
+            style="left: 7.5vh;">
 
-            <input type= "submit" name= "Submit" onclick="submitted()" style="left: 2.2vh;"/>
+            <!-- Submitted(event) is a function form JavaScript with the event that automatically passed to the function  -->
+            <input id="submit_btn" type="submit" name="Submit" onclick="submitted(event)" style="left: 25vh;"/>​
+
 
         </form>
 </section>
 
-<section id="gitLinked">
-    <div>
-        <img class="link_img" src="imgs/githubIcon.png" style="width: 15vh;" >
-        <a class="link_text" href="https://github.com/Weaponised115" style="font-size: 1.5vw;">My GitHub</a>
-    </div>
-
-    <div style="margin-left: 130vh;">
-        <img class="link_img" src="imgs/linkedIn.png" style="width: 7vh;" >
-        <a class="link_text" href="https://www.linkedin.com/in/samuel-devinett-68a8442b3/" style="font-size: 1.5vw; right: 5.5vh; margin-top: 2vh;">My linkedIn</a>
-    </div>
-</section>
-    
-
     <div class="quotes">
-
-        <blockquote style=" justify-content:flex-end; margin-right: 30vw; top: 10vh;">
+        <!-- 'blockquotes' are used when quoting -->
+        <blockquote style="margin-right: 30vw; top: 10vh;">
             "Johnny’s in the basement, mixin’ up the medicine<br>
             I’m on the pavement, thinkin’ about the government<br>
             The man in a trench coat, badge out, laid off<br>
@@ -81,7 +94,8 @@
             - Stevie Wonder
         </blockquote>
 
-        <blockquote style="justify-content:flex-end; top: 11vh;" >
+         <!-- Justify content makes the em centered -->
+        <blockquote style="top: 11vh;" >
             <br>
             “But you know that when the truth is told,<br> 
             that you can get what you want, or you can just get old.<br>
@@ -91,6 +105,8 @@
         </blockquote>
     </div>
 
+    <!-- em makes text italic -->
+    <!-- Justify content: center makes the em centered -->
     <em style="justify-content: center;  bottom: 5vh;" >
         The best student we have ever had<br>
         - Aston University

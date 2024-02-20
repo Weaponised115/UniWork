@@ -1,31 +1,50 @@
+<!-- Declares the file as a HTML and an English langauge  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Delcaring Basic HTML charset, names, content, links to fonts and icons -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of this document -->
     <title>CV Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- Links CSS content -->    
     <link rel="stylesheet" href="css/styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 </head>
+<!-- The body is used to input all the visual -->
 <body>
+    <!-- Links JS to page, inside body for loading reasons-->
     <script src="js/main.js" ></script>
+    <!-- 'p' is paragraph tag -->
+    <!-- 'style' is like a quick way of adding small CSS elements that don't need a whole section 
+    decdicated to them -->
+    <!-- vh and vw are instead of pixels, 2vh is 2% of the viewport height -->
     <p style="font-size: 4vh; top: 2vh;">Hello, I am</p>
+    <!-- An ID is used to give an  element a unique ID, an ID should only have one corresponding element  -->
     <header id="main_header">Samuel Devinett</header>
-    
-<main>
+ 
     <form id="btn_container">
-     <!--Call to action-->
+     <!-- Call to action-->
+     <!-- makes the type of button a button! Needed for JavaScript 
+     a class is like an ID but can be used for any tag
+     onclick means "when clicked on"
+     both redirects are functions made in JavaScript -->
     <button type="button" class="go_btn"  onclick=contactRedirect()>Contact Me</button>
-    <button type="button" class="go_btn"  onclick=portfolioRedirect()>View Portfolio</button>
+    <button type="button" class="go_btn"  onclick=portfolioRedirect()>View Me</button>
     </form>
-</main>
 
-    <footer  style="bottom: 20vh;">
+    <div style="text-align: center;">
+        <!-- 'br' is sort of like \n, it breaks the line and continues to next available-->
         created by<br>
         Samuel Devinett 
+    </div>
+
+    <!-- 'footer' is used at the bottom of the page -->
+    <footer style="top: 9.5vh; font-size: 2vh;">
+        Samuel Devinett &nbsp 230411191@aston.ac.uk  &nbsp SUN: 230411191
     </footer>
-    
+
 </body>
 </html>

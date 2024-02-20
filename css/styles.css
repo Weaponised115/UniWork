@@ -210,7 +210,6 @@ a:hover {
 }
 
 /*Used in contact.html*/
-
 #enquire-form{
   position: relative;
   justify-content: center;
@@ -221,7 +220,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 #quick_contact{
   display: flex;
   margin: 2vh;
@@ -238,6 +236,7 @@ a:hover {
 }
 
 /* This is for the contact me GitHub and LinkedIn positioning*/
+
 #gitLinked{
   position: relative;
   display: flex;
@@ -267,6 +266,18 @@ a:hover {
   position: relative;
   display: flex;
   text-decoration: underline;
+}
+
+#submit_btn{
+  color: #353839;
+  padding: 1vh;
+  border: 0.3vh solid black;
+  background-color: transparent;
+  border-radius:0.5vh;  
+}
+
+#submit_btn:hover{
+background-color: #35383950;
 }
 
 input[type=checkbox] {
@@ -313,6 +324,15 @@ input[type=submit] {
   font-size: 1.2vh;
 }
 
+input[id=text] {
+  position: relative;
+  transform: scale(1.5);
+  margin: 5vh;
+  padding: 2vh;
+  font-size: 1.2vh;
+  width: 40vh;
+  height:6vh;
+}
 /*Used in hobbies.html*/
 
 .hobbies_section {
@@ -352,7 +372,6 @@ input[type=submit] {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  margin-right: 5vh;
 }
 
 .langauges div{
@@ -363,7 +382,7 @@ input[type=submit] {
   text-align: center;
   margin: auto 3vh;
   padding-top: 2vh;
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
   font-size:1.5vh;
   top: 5vh;
 }
@@ -372,6 +391,7 @@ input[type=submit] {
   display: flex;
   position: relative;
   margin-top: 1.5vh;
+  margin-right: 25vh;
 }
 
 .line_logo{
@@ -381,6 +401,15 @@ input[type=submit] {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+}
+
+.review{
+  padding: 0.5vh;
+  border: solid 0.2vh black;
+  width: 20vh;
+  height: auto;
+  overflow-wrap: break-word;
+  color: #353839;
 }
 
 /*Used in projects*/
