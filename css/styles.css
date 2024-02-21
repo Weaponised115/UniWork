@@ -1,31 +1,83 @@
-/* Genral HTML Standards*/
+/* REFERENCE 
+	# Means we are editting an ID
+	. Means we are editting a Class
+	  Nothing means we are editting a html standard tag
+	: Allows us to to style parts of an element
+	
+	Background changes the color of the background
+	Height and Width change the height and width of the page
+	
+	Flex lets us use spacing and alignment features
+	Wrap lets us control what happens when the page overflows in to the cointainer, instead of being cut off by the screen size
+	Justify-content' aligns flex items along the axis
+	Center makes content in center of main axis
+	The direction of items in the flex are row by default
+	Font-size changes the font size...
+	Overflow is similar to wrap, but controls the elements contents 
+	
+	Fixed remains in blace no matter viewport
+	Relative allows us to change position of element, relative to it's position
+	
+	Text-align aligns text
+	Align item is similar to Text-align but with cross axis
+	
+	z-index is what level the element is on, I used 98 for this, and later 99 for the back button
+	The margin allows for a specified space around the elements, outisde of borders (if any),
+	we can also use margin-top, margin-right, margin-bottom and margin-left
+	Border creates a border
+	Border Radius changes the 'roundness' of the border
+*/
 
+
+
+/*** The Genral HTML Standards ***/
+
+/* This body changes ALL body tags */
+/* There is no . or # before the text as we are alterring standard html tags */
 body {
-  position: relative;
+  /* background */
+  /* 'linear-gradient' creates a gradient of colour from left to right, using the colours sepcified */
   background: linear-gradient(to bottom right, #feffdf, #97cba9, #668ba4 );
+  /* 'height' lets us change the vertical dimensions of the page*/
+  /* 'vh' specifies size depending on the viewport, so this is 100% of the viewport pixel size */
   height: 100vh;
+  /* 'flex allows us to use alignment and spacing features */
   display: flex;
+  /* 'wrap' lets us control what happens when the page overflows in to the cointainer, 
+  instead of being cut off by the screen size */
   flex-wrap: wrap;
+  /* 'justify-content' aligns flex items along the axis */
+  /* 'center' makes content in center of main axis*/
   justify-content: center;
+  /* Same thing but with normal cross axis */
   align-items: center;
+  /* The direction of items in the flex are row by default */
   flex-direction: column; 
+  /* Changes the font */
   font-family: 'Libre Baskerville', serif;
-  transition:0.3s ease-in-out;
+  /* The margin allows for a specified space around the elements, outisde of borders (if any) */
+  /* auto choses that size for me */
   margin:auto;
+  /* Similar to flex-wrap, but controls the elements contents */
   overflow: auto;
 }
 
 blockquote{
+  /* 'fixed' remains in blace no matter viewport */
   position: fixed;
   text-align: center;
+  /* 'color' changes the font color */
+  /* You can you names of colours, RGB values, RGBA values, HSL and HSLA, Hexdeical notatiion (like here) */
   color:#353839;
   width: 45vh;
   font-size: 2vh;
+  /* Only changes the margin gap on the left and right */
   margin-left: auto;
   margin-right: auto;
 }
 
 em{
+  /* Relative allows us to change position of element, relative to it's position */
   position: relative;
   display: flex;
   text-align: center;
@@ -38,6 +90,7 @@ em{
 footer{
   position: relative;
   display: flex;
+  /* 'text-align' aligns text */
   text-align: center;
   flex-wrap: wrap;
   color:#353839;
@@ -54,6 +107,7 @@ h1, h2, h3, p, li, a {
 
 label{
   position: relative;
+  /* 'left' moves an item away from the left side of the screen by specified amount */
   left: 1.5vh;
 }
 
@@ -68,18 +122,20 @@ blockquote{
   margin-right: auto;
 }
 
+/* The ':hover' changes the look of the 'a' anchor. when it is being hovered over */
 a:hover {
+  /* Removes underline from the anchor, using the none type */
   text-decoration: none;
   color: #353839;
 }
 
-/* Used In Many*/
+/*** Used In Many ***/
 
 .navbar{
   position: fixed;
   margin: 0;
-  border-radius:1vh;
   top: 0;
+  /* 'z-index' is what level the element is on, I used 98 for this, and later 99 for the back button  */
   z-index: 98;
 }
 
@@ -88,6 +144,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5vh;
+  /* Padding is like margin, but makes spacing INSIDE the borders */
   padding: 0;
   margin: 0;
 }
@@ -98,6 +155,7 @@ a:hover {
   margin: 2.5vh;
   margin-right: 3vh;
   padding: 0 2vh;
+  /* 'cursor' changes the pointer look, here we make it a pointer when a nav bar list item is selected */
   cursor: pointer;
 }
 
@@ -123,8 +181,10 @@ a:hover {
 .invis_btn{
   position: relative;
   display: flex;
+  /* Makes the backgournd transparent */
   background: transparent;
   cursor: pointer;
+  /* Makes the border transparent */
   border: transparent;
   margin:0; 
   z-index: 1;
@@ -142,7 +202,9 @@ a:hover {
 .current{
   display: flex;
   color: #353839;
+  /* Creats a solid border that is 0.3% large of the viewport, uses the color #35389 */
   border: 0.3vh solid #353839;
+  /* Chnages the smoothness of the edges on the border */
   border-radius:1vh;
   padding: 1vh;
 }
@@ -157,9 +219,9 @@ a:hover {
   z-index: 99;
 }
 
-/* Used In index.html */
+/*** Used In index.html ***/
 
-#main_header {
+#main-header {
   position: relative;
   display: flex;
   color: #668ba4;
@@ -174,7 +236,6 @@ a:hover {
   position: relative;
   cursor: pointer;
   text-align: center;
-  cursor: pointer;
   margin: 10vw;
   margin-top: -20vw;
   font-size: 2vh;
@@ -190,10 +251,11 @@ a:hover {
   display: flex;
   justify-content: center; 
   margin-top: 50vh; 
+  /* Makes a gap between the elemetns inside the button container */
   gap: 20vh;
 }
 
-/*Used in aboutMe.html*/
+/*** Used in aboutMe.html ***/
 
 #about_main{
   display: flex;
@@ -209,7 +271,8 @@ a:hover {
   color: #353839;
 }
 
-/*Used in contact.html*/
+/*** Used in contact.html ***/
+
 #enquire-form{
   position: relative;
   justify-content: center;
@@ -233,23 +296,17 @@ a:hover {
   display: flex;
   font-size: 5vh;
   z-index: 1;
+  gap: 35vh;
 }
 
-/* This is for the contact me GitHub and LinkedIn positioning*/
-
-#gitLinked{
+#links{
   position: relative;
   display: flex;
-  flex-direction: row;
-  bottom: 55vh;
-}
-
-.link_img{
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  color:#353839;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
+  top: 20vh;
+  gap: 130vh;
 }
 
 .link_text{
@@ -265,10 +322,11 @@ a:hover {
 .link_text:hover{
   position: relative;
   display: flex;
+  /* Makes sure the text is underlined */
   text-decoration: underline;
 }
 
-#submit_btn{
+#submit{
   color: #353839;
   padding: 1vh;
   border: 0.3vh solid black;
@@ -276,7 +334,7 @@ a:hover {
   border-radius:0.5vh;  
 }
 
-#submit_btn:hover{
+#submit:hover{
 background-color: #35383950;
 }
 
@@ -289,6 +347,7 @@ input[type=checkbox] {
 
 input[type=email] {
   position: relative;
+  /* Resizes by a scale a factor of 1.5 */
   transform: scale(1.5);
   margin: 2vh;
   margin-left: 7vh;
@@ -333,11 +392,13 @@ input[id=text] {
   width: 40vh;
   height:6vh;
 }
-/*Used in hobbies.html*/
+
+/*** Used in hobbies.html ***/
 
 .hobbies_section {
   position: relative;
   display: flex;
+  /* Makes direction back to row */
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -363,13 +424,13 @@ input[id=text] {
   margin-left: 10vh;
 }
 
-/*Used in languages.html*/
+/*** Used in languages.html ***/
 
 .langauges{
   position: relative;
   display: flex;
+  flex-wrap: inherit;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
@@ -408,11 +469,12 @@ input[id=text] {
   border: solid 0.2vh black;
   width: 20vh;
   height: auto;
+  /* This is used to make sure the words stay inside the border, by breaking the word once it reaches overflow size */
   overflow-wrap: break-word;
   color: #353839;
 }
 
-/*Used in projects*/
+/*** Used in projects ***/
 #project_height{
   height: 250vh;
 }
@@ -441,9 +503,7 @@ input[id=text] {
   text-align: start;
 }
 
-/* end*/
-
-
+/* By Samuel Devinett */
 
 
 

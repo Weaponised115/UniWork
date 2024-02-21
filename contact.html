@@ -15,12 +15,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!-- Sets a page height, used in this case for scrolling -->
-<body style="height: 120vh;">
+<body id="contact_me" style="height: 130vh;">
     <script src="js/main.js" ></script>
 
     <!-- Header is used to make a header, here I use 'top' to make the header 4vh away from the top of the page -->
     <header id="page_header" style="top: 4vh;">Contact Me</header>
-    
+
     <!-- 'h2' is a subheader, just a smaller one! h3 is even smaller and so on -->
     <h2 style="top: 2vh; font-size: 3vh;"> Enquire for a project from me  </h2>
     <div id="quick_contact">
@@ -49,6 +49,18 @@
         </button>
     </div>
 
+    <div id="links">
+        <div>
+            <a class="lin_text" href="https://github.com/Weaponised115" ><img src="imgs/githubIcon.png" style="width: 20vh;"></a>
+            My Github
+        </div>
+
+        <div style=" position: relative; top: 2.5vh;">
+            <a class="link_text" href="https://www.linkedin.com/in/samuel-devinett-68a8442b3/"><img src="imgs/linkedIn.png" style=" position: relative ;width: 8vh; left: 1.5vh; margin-bottom: 3vh;"></a>
+            My LinkedIn
+        </div>
+    </div>
+
 
     <section id="enquier">
         <form id="enquire-form">
@@ -62,8 +74,8 @@
             <!-- required means you MUST input -->
             <!-- the 'type' will effect what sort of characteristics  -->
             <input type ="text" name="name" placeholder="First Name " required/>
-			<input type="email"  id="first_email" placeholder="Email" required onchange="checkEmail()"/>
-			<input type="email"	 id="confirm_email" placeholder="Confirm Email" required onchange="checkEmail()"/>
+			<input type="email"  id="first_email" placeholder="Email" required onchange="checkEmails()"/>
+			<input type="email"	 id="confirm_email" placeholder="Confirm Email" required onchange="checkEmails()"/>
             <input type="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required/><br></br> 
         </div>
 
@@ -77,12 +89,12 @@
             placeholder="A short paragraph explaining the desired project (max 500 characters)" 
             style="left: 7.5vh;">
 
-            <!-- Submitted(event) is a function form JavaScript with the event that automatically passed to the function  -->
-            <input id="submit_btn" type="submit" name="Submit" onclick="submitted(event)" style="left: 25vh;"/>​
+            <!-- validateForm(event) is a function form JavaScript with the event that automatically passed to the function  -->
+            <input id="submit" type="submit" name="Submit" onclick="validateForm(event)" style="left: 25vh;"/>​
 
 
         </form>
-</section>
+    </section>
 
     <div class="quotes">
         <!-- 'blockquotes' are used when quoting -->
@@ -113,3 +125,5 @@
     </em>
 </body>
 </html>
+
+<!-- By Samuel Devinett -->

@@ -22,9 +22,9 @@
     <!-- 'a' is an anchor tag, which allows for hyperlinks (urls, html files, email addresses...), in this case,
     I am redirecting the 'li' to it's corresponding project section  -->
     <ul id="project_nav">
-        <li><a href="#isobel" style="text-decoration: none;">Project 1 </a> </li>
-        <li><a href="#mario" style="text-decoration: none;">Project 2</a> </li>
-        <li><a href="#mario" style="text-decoration: none;">Project 3 </a> </li>
+        <li><a href="#project" style="text-decoration: none;">Project 1 </a> </li>
+        <li><a href="#project_mario" style="text-decoration: none;">Project 2</a> </li>
+        <li><a href="#project_thisSite" style="text-decoration: none;">Project 3 </a> </li>
     </ul>
 
       <!-- Header is used to make a header -->
@@ -55,41 +55,43 @@
         </button>
     </div>
 
-    <div id="isobel" >
-        <!--F Pattern-->
-        <h2 style="font-size: 2.2vh;">project 1.</h2>
+    <section id="projects">
 
-        <div class="img_size">
-        <!-- 'img' allows us to import an image, src means source - either file path or web link  -->
-        <img class="box" src="imgs/isobel.png" style="width:auto; height:50vh;">
+        <div id="project">
+            <!--F Pattern-->
+            <h2 style="font-size: 2.2vh;">project 1.</h2>
+
+            <div class="img_size">
+            <!-- 'img' allows us to import an image, src means source - either file path or web link  -->
+            <img class="box" src="imgs/isobel.png" style="width:auto; height:50vh;" alt="Isobels Websbite">
+            </div>
+
+            <!-- 'p' is a paragraph-->
+            <p class="description" >
+                Above is a screenshot of a website that I created for a friend as a present,<br>
+                I used a combination of HTML, CSS, and JavaScript to create and display this website.<br>
+                I also had to learn about domains and DNS servers, in order to publish this code to a public website.
+            </p>
         </div>
 
-        <!-- 'p' is a paragraph-->
-        <p class="description" >
-            Above is a screenshot of a website that I created for a friend as a present,<br>
-            I used a combination of HTML, CSS, and JavaScript to create and display this website.<br>
-            I also had to learn about domains and DNS servers, in order to publish this code to a public website.
-        </p>
-    </div>
+        <div id="project_mario">
+            <!--F Pattern-->
+            <h2 style="font-size: 2.2vh;" >project 2.</h2>
 
-    <div id="mario">
-        <!--F Pattern-->
-        <h2 style="font-size: 2.2vh;" >project 2.</h2>
+            <img class="box" src="imgs/mario.png" style="width:94vh; height:auto;" alt="Mario Game">
 
-        <img class="box" src="imgs/mario.png" style="width:94vh; height:auto;">
+            <p class="description" >
+                I created a mario game that ressembled the calssic 'Google Dino Run' style, using only HTML,<br>
+                I used user inputted keystrokes, an realtime 'clock', arrays, hitboxes, animations and more.<br>
+            </p>
+        </div>
 
-        <p class="description" >
-            I created a mario game that ressembled the calssic 'Google Dino Run' style, using only HTML,<br>
-            I used user inputted keystrokes, an realtime 'clock', arrays, hitboxes, animations and more.<br>
-        </p>
-    </div>
-
-    <div class="dvd">
+    <div id="project_thisSite">
         <!--F Pattern-->
         <!-- h2 is a heading, the seconed level of the headings -->
         <h2 style="font-size: 2.2vh;" >project 3.</h2>
 
-        <img class="box" src="imgs/thisSite.png" style="width:auto; height:50vh;">
+        <img class="box" src="imgs/thisSite.png" style="width:auto; height:50vh;" alt="This Website">
 
         <p class="description" >
             I made this site using HTML, CSS and a bit of JavaScript.<br>
@@ -97,9 +99,12 @@
         </p>
     </div>
 
-    <!-- 'footer' is used at the bottom of the page -->
-    <footer style="top: 10vh;">
-        <a href="#project_height" style="color: #353839;">Return To Top </a> </li>
-    </footer>
-    </body>
+        <!-- 'footer' is used at the bottom of the page -->
+        <footer style="top: 10vh;">
+            <a href="#project_height" style="color: #353839;">Return To Top </a> </li>
+        </footer>
+    </section>
+</body>
 </html>
+
+<!-- By Samuel Devinett -->

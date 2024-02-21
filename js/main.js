@@ -56,7 +56,7 @@ function checkDate() {
 }
 
 // Creates a function that checks that the emails match
-function checkEmail() {
+function checkEmails() {
     let first_email = document.getElementById("first_email");
     let confirm_email = document.getElementById("confirm_email");
     
@@ -77,20 +77,20 @@ function checkEmail() {
         return false;
     }
 
-    // We use a return boolean because in the submitted section, we will say 'if check email is true...'
+    // We use a return boolean because in the validateForm section, we will say 'if check email is true...'
 }
 
 
 // Function to Submit
-function submitted(event) {
-    // This means the form can not be submitted YET 
+function validateForm(event) {
+    // This means the form can not be validateForm YET 
     event.preventDefault();
 
     // Gets the form
     let form = document.getElementById("enquire-form");
 
-    // If both the form is filled AND the checkEmails are valid AND the date is valid, then...
-    if (form.checkValidity() && checkEmail() && checkDate()) {
+    // If both the form is filled AND the checkEmailss are valid AND the date is valid, then...
+    if (form.checkValidity() && checkEmails() && checkDate()) {
         // Gets all values from each input and stores their 'values'
         //We use [0] because there is only one element for name , if we had 2 name sections then we could use [0] or [2]
         let name = document.getElementsByName("name")[0].value;
@@ -137,3 +137,5 @@ function submitted(event) {
         alert("Please fill out all required fields and ensure that the emails match.");
     }
 }
+
+// By Samuel Devinett
